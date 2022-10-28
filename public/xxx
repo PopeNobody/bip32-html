@@ -1,0 +1,32 @@
+function onLoad(obj){
+
+  var list = "BCH BTC DOGE XRP XMR".split(/\s+/);
+  var group=document.getElementById("coins");
+
+  while(list.length){
+    const c=list.shift();
+    if(c==null || 0==c.length)
+      continue;
+
+    const lb = document.createElement("label");
+    const cb = document.createElement("input");
+    const tx = document.createTextNode(c);
+
+    const id="cb-"+c;
+    cb.type="checkbox";
+    cb.id=id;
+    cb.value=c;
+    cb.checked="checked";
+    group.appendChild(lb);
+    group.appendChild(cb);
+    group.appendChild(tx);
+    lb.for=id;;
+
+    console.log(group);
+  }
+  list.sort();
+
+}
+window.onload=onLoad;
+
+

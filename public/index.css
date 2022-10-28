@@ -1,0 +1,18 @@
+textarea {
+  width: 100%;
+  border: solid red 10px;
+  padding: 3px;
+  margin: 3px;
+  
+}
+table {
+  width: 100%;
+}
+td {
+  width: 25%;
+}
+form {
+  width: 100%;
+  border: solid green 10px;
+  display: block;
+}
